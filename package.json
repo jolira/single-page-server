@@ -1,0 +1,45 @@
+{
+    "name":"singe-page-server",
+    "version":"0.0.1",
+    "description":"An Server for Single-Page-Applications",
+    "keywords":["site", "html5"],
+    "contributors": [
+        "Joachim Kainz <jfk@jolira.com> (http://www.jolira.com)"
+    ],
+    "repository":{
+        "url":"https://github.com/jolira/singe-page-server.git",
+        "type":"git"
+    },
+    "dependencies":{
+        "handlebars":"*",
+        "404project":"*",
+        "connect-less-jolira":"*",
+        "directory-tree-watcher":"*",
+        "express":">= 3.0.0alpha4",
+        "connect":">= 2.0.3",
+        "jolira-logger": "*",
+        "batch":"*"
+    },
+    "bin": {
+        "singe-page-server": "./bin/singe-page-server"
+    },
+    "devDependencies":{
+        "debug":"*",
+        "horaa":"*",
+        "vows":"*",
+        "jake":"*",
+        "uglify-js":"*"
+    },
+    "scripts":{
+        "test":"jake test",
+        "prepublish":"npm prune"
+    },
+    "bugs":{
+        "mail":"dev@jolira.com",
+        "url":"http://github.com/jolira/singe-page-server/issues"
+    },
+    "main":"server",
+    "engines":{
+        "node":">= 0.6.0"
+    }
+}

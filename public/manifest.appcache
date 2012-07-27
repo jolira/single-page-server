@@ -1,0 +1,16 @@
+CACHE MANIFEST
+
+# {{date}}
+
+CACHE:
+{{#each manifest}}{{this}}
+{{/each}}
+{{#each stylesheets}}{{this}}
+{{/each}}
+{{#each scripts}}{{this}}
+{{/each}}
+{{#each trailingScripts}}{{this}}
+{{/each}}
+
+NETWORK:
+*
