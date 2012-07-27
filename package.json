@@ -1,8 +1,8 @@
 {
     "name":"singe-page-server",
     "version":"0.0.1",
-    "description":"An Server for Single-Page-Applications",
-    "keywords":["site", "html5"],
+    "description":"A Server for Single-Page Web-Applications",
+    "keywords":["html", "html5", "express", "connect", "application", "server"],
     "contributors": [
         "Joachim Kainz <jfk@jolira.com> (http://www.jolira.com)"
     ],
