@@ -16,7 +16,6 @@
         theLauncher = require('./lib/launcher'),
         watch = require("directory-tree-watcher"),
         path = require("path"),
-        SITES = conf.sites || path.join(".", "sites"),
         RESTART_DELAY = conf["restart-delay"] || 1500,
         PORT = conf.port || getInt(process.env.PORT)  || getInt(process.env.C9_PORT) || 3e3,
         WORKERS = conf.cluster === true ? os.cpus().length * 2 : getInt(conf.cluster),
@@ -101,7 +100,7 @@
         }
     }
 
-    launcher = theLauncher(SITES, logger);
+    launcher = theLauncher(conf.site, logger);
 
     function start(){
         launcher.start(PORT, SSL_PORT, SSL_KEY, SSL_CERT, function (err) {
